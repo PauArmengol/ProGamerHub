@@ -1,13 +1,9 @@
 :root {
-
-    /**
-     * colors
-     */
   
     --rich-black-fogra-29_95: hsla(222, 18%, 11%, 0.95);
     --raisin-black-1: hsl(0, 0%, 16%);
     --raisin-black-2: hsl(236, 17%, 17%);
-    --raisin-black-3: hsl(280, 11%, 11%);
+    --raisin-black-3: hsl(281, 40%, 16%);
     --raisin-black-4: hsl(280, 8%, 15%);
     --english-violet: hsl(274, 21%, 23%);
     --eerie-black-1: hsl(277, 25%, 10%);
@@ -19,7 +15,7 @@
     --marigold_75: hsla(42, 99%, 46%, 0.75);
     --xiketic_90: hsla(280, 37%, 8%, 0.9);
     --cultured-2: hsl(0, 0%, 97%);
-    --marigold: hsl(42, 99%, 46%);
+    --marigold: hsl(113, 100%, 50%);
     --platinum: hsl(0, 0%, 89%);
     --dim-gray: hsl(0, 0%, 42%);
     --white_15: hsla(0, 0%, 100%, 0.15);
@@ -28,14 +24,7 @@
     --silver: hsl(0, 0%, 78%);
     --white: hsl(0, 0%, 100%);
     --jet: hsl(236, 13%, 23%);
-  
-    /**
-     * typography
-     */
-  
-    --ff-oxanium: 'Oxanium', cursive;
-    --ff-poppins: 'Poppins', sans-serif;
-  
+    --ff-oswald: 'OSwald', sans-serif;
     --fs-1: 7rem;
     --fs-2: 4.5rem;
     --fs-3: 3.6rem;
@@ -47,51 +36,22 @@
     --fs-9: 1.4rem;
     --fs-10: 1.3rem;
     --fs-11: 1.2rem;
-  
     --fw-500: 500;
     --fw-600: 600;
     --fw-700: 700;
     --fw-800: 800;
-  
-    /**
-     * spacing
-     */
-  
     --section-padding: 120px;
-  
-    /**
-     * gradient
-     */
-  
     --gradient: radial-gradient(circle, hsl(250, 7%, 17%), hsl(250, 11%, 11%));
-  
-    /**
-     * box shadow
-     */
-  
     --shadow-1: 0px 2px 8px 0px hsla(0, 0%, 0%, 0.2),
                 inset 0px 2px 8px 0px hsla(0, 0%, 0%, 0.4);
     --shadow-2: 0px 5px 10px 1px hsla(0, 0%, 0%, 0.4);
     --shadow-3: 0px 5px 10px 1px hsla(219, 98%, 17%, 0.2);
     --shadow-4: 0px 5px 10px 1px hsla(0, 0%, 0%, 0.15);
-  
-    /**
-     * transition
-     */
-  
     --transition: 0.25s ease;
     --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
   
   }
-  
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #RESET
-  \*-----------------------------------*/
-  
+ 
   *,
   *::before,
   *::after {
@@ -133,7 +93,7 @@
   address { font-style: normal; }
   
   html {
-    font-family: var(--ff-poppins);
+    font-family: var(--ff-oswald);
     font-size: 10px;
     scroll-behavior: smooth;
   }
@@ -146,14 +106,6 @@
   
   :focus-visible { outline-offset: 4px; }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #REUSED STYLE
-  \*-----------------------------------*/
-  
   .container { padding-inline: 15px; }
   
   .section { padding-block: var(--section-padding); }
@@ -162,7 +114,7 @@
   .h2,
   .h3 {
     color: var(--white);
-    font-family: var(--ff-oxanium);
+    font-family: var(--ff-oswald);
     font-weight: var(--fw-800);
     line-height: 1;
   }
@@ -301,14 +253,6 @@
     line-height: 1.8;
   }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #HEADER
-  \*-----------------------------------*/
-  
   .header-top,
   .cart-btn,
   .header-bottom::before,
@@ -348,7 +292,7 @@
   
   .logo {
     color: var(--white);
-    font-family: var(--ff-oxanium);
+    font-family: var(--ff-oswald);
     font-size: 3rem;
     font-weight: var(--fw-800);
   }
@@ -410,14 +354,6 @@
   
   .navbar-link:is(:hover, :focus) { background-color: var(--white_10); }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #SEARCH BOX
-  \*-----------------------------------*/
-  
   .search-container {
     background-color: var(--rich-black-fogra-29_95);
     position: fixed;
@@ -474,15 +410,7 @@
     cursor: default;
     z-index: -1;
   }
-  
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #HERO
-  \*-----------------------------------*/
-  
+
   .hero-banner { display: none; }
   
   .hero {
@@ -510,15 +438,7 @@
     color: var(--light-gray-2);
     margin-block-end: 45px;
   }
-  
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #BRAND
-  \*-----------------------------------*/
-  
+
   .brand {
     --section-padding: 60px;
     background-image: var(--gradient);
@@ -534,15 +454,7 @@
   }
   
   .brand-item > img { margin-inline: auto; }
-  
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #LATEST GAME
-  \*-----------------------------------*/
-  
+
   .section-wrapper {
     position: relative;
     background-color: var(--white);
@@ -605,15 +517,7 @@
   }
   
   .latest-game-card .card-price .span { margin-inline-start: 5px; }
-  
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #LIVE MATCH
-  \*-----------------------------------*/
-  
+
   .live-match {
     padding-block-start: 0;
     overflow-x: hidden;
@@ -683,14 +587,6 @@
     line-height: 1;
   }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #FEATURED GAME
-  \*-----------------------------------*/
-  
   .featured-game { background-color: var(--cultured-2); }
   
   .featured-game .section-title {
@@ -752,14 +648,6 @@
   
   .featured-game-card:is(:hover, :focus-within) .card-content-overlay { opacity: 1; }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #SHOP
-  \*-----------------------------------*/
-  
   .shop {
     background-repeat: no-repeat;
     background-position: center;
@@ -809,7 +697,7 @@
   }
   
   .shop-card .card-price {
-    font-family: var(--ff-oxanium);
+    font-family: var(--ff-oswald);
     font-weight: var(--fw-800);
   }
   
@@ -827,13 +715,6 @@
     color: var(--xiketic);
     border-color: var(--marigold);
   }
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #BLOG
-  \*-----------------------------------*/
   
   .blog { background-color: var(--white); }
   
@@ -880,7 +761,7 @@
   .blog-card .card-title {
     color: var(--raisin-black-1);
     font-size: var(--fs-5);
-    font-family: var(--ff-oxanium);
+    font-family: var(--ff-oswald);
     font-weight: var(--fw-800);
     text-transform: uppercase;
     line-height: 1.2;
@@ -911,14 +792,6 @@
   
   .blog-card .card-link ion-icon,
   .blog-card .card-link:is(:hover, :focus) { color: var(--marigold); }
-  
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #NEWSLETTER
-  \*-----------------------------------*/
   
   .newsletter { margin-block-end: 80px; }
   
@@ -985,14 +858,6 @@
   
   .newsletter-btn:is(:hover, :focus)::before { background-color: var(--white); }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #FOOTER
-  \*-----------------------------------*/
-  
   .footer { color: var(--roman-silver); }
   
   .footer-top { padding-block-end: var(--section-padding); }
@@ -1029,7 +894,7 @@
   .footer-list-title {
     position: relative;
     color: var(--silver);
-    font-family: var(--ff-oxanium);
+    font-family: var(--ff-oswald);
     text-transform: uppercase;
     font-weight: var(--fw-800);
     padding-block-end: 20px;
@@ -1113,14 +978,6 @@
     color: var(--marigold);
   }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #BACK TO TOP
-  \*-----------------------------------*/
-  
   .back-top-btn {
     position: fixed;
     bottom: 10px;
@@ -1138,23 +995,9 @@
     visibility: visible;
     transform: translateY(-10px);
   }
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #MEDIA QUERIES
-  \*-----------------------------------*/
-  
-  /**
-   * responsive for larger than 576px screen
-   */
+ 
   
   @media (min-width: 576px) {
-  
-    /**
-     * REUSED STYLE
-     */
   
     .container {
       max-width: 540px;
@@ -1163,12 +1006,6 @@
     }
   
     .h1 { --fs-2: 7rem; }
-  
-  
-  
-    /**
-     * HEADER
-     */
   
     .header-actions { gap: 40px; }
   
@@ -1191,47 +1028,17 @@
       line-height: 1;
       font-weight: var(--fw-800);
     }
-  
-  
-  
-    /**
-     * SEARCH BOX
-     */
-  
+
     .search-container :is(.search-field, .search-submit) { font-size: var(--fs-3); }
-  
-  
-  
-    /**
-     * BRAND
-     */
-  
+ 
     .brand-item { min-width: calc(33.33% - 13.33px); }
-  
-  
-  
-    /**
-     * FEATURED GAME 
-     */
-  
+
     .featured-game .scrollbar-item { min-width: 50%; }
-  
-  
-  
-    /**
-     * BLOG
-     */
   
     .blog-list {
       grid-template-columns: 75%;
       justify-content: center;
     }
-  
-  
-  
-    /**
-     * FOOTER
-     */
   
     .footer-top .container { grid-template-columns: 1fr 1fr; }
   
@@ -1240,66 +1047,25 @@
   
   }
   
-  
-  
-  
-  
-  /**
-   * responsive for larger than 768px screen
-   */
-  
   @media (min-width: 768px) {
-  
-    /**
-     * REUSED STYLE
-     */
   
     .container { max-width: 720px; }
   
     .scrollbar-item { min-width: calc(50% - 15px); }
-  
-  
-  
-    /**
-     * HERO
-     */
-  
+ 
     .hero-text {
       max-width: 60ch;
       margin-inline: auto;
     }
-  
-  
-  
-    /**
-     * BRAND
-     */
-  
+
     .brand-item { min-width: calc(25% - 15px); }
-  
-  
-  
-    /**
-     * LIVE MATCH
-     */
   
     .live-match-banner .play-btn { font-size: 120px; }
   
     .live-match-player::after { font-size: 30rem; }
   
   
-  
-    /**
-     * BLOG
-     */
-  
     .blog-list { grid-template-columns: 1fr 1fr; }
-  
-  
-  
-    /**
-     * NEWSLETTER
-     */
   
     .newsletter :is(.input-wrapper, .newsletter-btn) { margin: 0; }
   
@@ -1317,13 +1083,7 @@
       width: 100%;
       margin-inline: auto;
     }
-  
-  
-  
-    /**
-     * FOOTER
-     */
-  
+ 
     .footer-brand,
     .footer-wrapper { grid-column: auto; }
   
@@ -1338,12 +1098,6 @@
       gap: 20px;
     }
   
-  
-  
-    /**
-     * BACK TO TOP
-     */
-  
     .back-top-btn {
       bottom: 50px;
       right: 45px;
@@ -1351,31 +1105,13 @@
   
   }
   
-  
-  
-  
-  
-  /**
-   * responsive for larger than 992px screen
-   */
-  
   @media (min-width: 992px) {
-  
-    /**
-     * REUSED STYLE
-     */
   
     .container { max-width: 960px; }
   
     :is(.header, .hero, .live-match) .container { max-width: unset; }
   
     .scrollbar-item { min-width: calc(33.33% - 20px); }
-  
-  
-  
-    /**
-     * HEADER
-     */
   
     .header-top {
       display: block;
@@ -1438,7 +1174,7 @@
       top: 0;
       left: -15px;
       right: auto;
-      width: 170px;
+      width: 100px;
       --skewX: 16deg;
     }
   
@@ -1476,12 +1212,6 @@
   
     .navbar-link:is(:hover, :focus)::before { opacity: 1; }
   
-  
-  
-    /**
-     * HERO
-     */
-  
     .hero { text-align: left; }
   
     .hero-banner { display: block; }
@@ -1495,27 +1225,9 @@
   
     .btn { margin-inline: 0; }
   
-  
-  
-    /**
-     * BRAND
-     */
-  
     .brand-item { min-width: calc(20% - 16px); }
   
-  
-  
-    /**
-     * LATEST GAME
-     */
-  
     .latest-game .has-scrollbar { padding-block-end: 0; }
-  
-  
-  
-    /**
-     * LIVE MATCH
-     */
   
     .live-match-banner {
       max-width: 700px;
@@ -1531,37 +1243,14 @@
     .live-match-detail { margin-block: 0; }
   
   
-  
-    /**
-     * FEATURED GAME
-     */
-  
     .featured-game .scrollbar-item { min-width: 33.33%; }
-  
-  
-  
-    /**
-     * BLOG
-     */
   
     .blog-list {
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
     }
   
-  
-  
-    /**
-     * NEWSLETTER
-     */
-  
     .newsletter-form { max-width: 650px; }
-  
-  
-  
-    /**
-     * FOOTER
-     */
   
     .footer .container {
       grid-template-columns: 1fr 0.7fr 0.7fr;
@@ -1570,19 +1259,7 @@
   
   }
   
-  
-  
-  
-  
-  /**
-   * responsive for larger than 1200px screen
-   */
-  
   @media (min-width: 1200px) {
-  
-    /**
-     * REUSED STYLE
-     */
   
     .container,
     :is(.header, .hero, .live-match) .container { max-width: 1230px; }
@@ -1591,12 +1268,6 @@
   
     .scrollbar-item { min-width: calc(25% - 22.5px); }
   
-  
-  
-    /**
-     * HEADER
-     */
-  
     .header-bottom::before { width: 270px; }
   
     .navbar-link {
@@ -1604,27 +1275,9 @@
       padding-inline: 25px;
     }
   
-  
-  
-    /**
-     * HERO
-     */
-  
     .hero .container { grid-template-columns: 1fr 1fr; }
   
-  
-  
-    /**
-     * BRAND
-     */
-  
     .brand-item { min-width: calc(16.66% - 16.66px); }
-  
-  
-  
-    /**
-     * LIVE MATCH
-     */
   
     .section-wrapper::before { height: 72%; }
   
@@ -1632,29 +1285,11 @@
   
     .live-match-player::after { font-size: 35rem; }
   
-  
-  
-    /**
-     * FEATURED GAME
-     */
-  
     .featured-game .has-scrollbar { padding-block-end: 0; }
   
     .featured-game .scrollbar-item { min-width: 25%; }
   
-  
-  
-    /**
-     * SHOP
-     */
-  
     .shop .has-scrollbar { padding-block-end: 15px; }
-  
-  
-  
-    /**
-     * NEWSLETTER
-     */
   
     .newsletter-card {
       display: flex;
@@ -1666,12 +1301,6 @@
     .newsletter .h2 { margin-block-end: 0; }
   
     .newsletter-form { margin-inline: 0; }
-  
-  
-  
-    /**
-     * FOOTER
-     */
   
     .footer .container { grid-template-columns: 1fr 0.7fr 0.7fr 1fr; }
   
